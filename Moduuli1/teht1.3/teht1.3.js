@@ -7,12 +7,12 @@ let second = parseInt(prompt("Give second:"))
 let third = parseInt(prompt("Give third:"))
 
 let sum = first + second + third
-let multiply = first * second * third
+let product = first * second * third
 let average = sum / 3
 
 target.innerHTML =
-    'sum = ' + sum +
-    '<br> multiplication = ' + multiply +
-    '<br> average = ' + average;
+    'Sum = ' + sum +
+    '<br> Product = ' + product +
+    '<br> Average = ' + average;
 
 
