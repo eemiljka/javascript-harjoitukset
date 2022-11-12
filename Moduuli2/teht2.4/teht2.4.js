@@ -3,12 +3,17 @@ let target = document.querySelector('#target')
 
 let numbers = [];
 let number = prompt("Give a number")
+numbers.push(number)
 
 while (number != 0) {
-    askForNumber();
-}
-function askForNumber() {
-    numbers.push(number)
-    let number = prompt("Give a number")
+    number = prompt("Give a number")
+        if (number == 0) {
+        break
+        }
+        else {
+            numbers.push(number)
+        }
 }
 
+numbers.sort(function(a, b){return b-a});
+target.innerHTML = numbers
