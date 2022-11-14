@@ -13,5 +13,15 @@ for (let i = 0; i < nbrCandidates; i++)
     }
     candidates.push(candidate);
 }
+let nbrVoters = parseInt(prompt("Number of voters?"))
 
-console.log(candidates)
+for (let i = 0; i < nbrVoters; i++)
+{
+    let vote = prompt("Voter " + (i + 1) + ": Please, type in your vote.")
+    if (candidates.includes(vote)) {
+            candidates[i].votes += 1
+        }
+}
+
+target.innerHTML = "Candidate name: " + candidates[0].name + ". Votes: " + candidates[0].votes
+
