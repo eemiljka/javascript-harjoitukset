@@ -3,7 +3,8 @@ let target = document.querySelector('#target')
 // Starting an unordered list
 let html = '<ul>'
 
-// Making a dice rolling function
+let random = Math.floor(Math.random() * 101) + 1;
+
 function rollDice(nbrOfSides) {
     random = Math.floor(Math.random() * nbrOfSides) + 1;
     html += '<li>'
@@ -15,6 +16,7 @@ function rollDice(nbrOfSides) {
 while (random != 101) {
     rollDice(101);
 }
+
 
 html += '</ul>'
 target.innerHTML = html
