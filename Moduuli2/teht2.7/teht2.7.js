@@ -18,5 +18,3 @@ while (random != 101) {
 
 html += '</ul>'
 target.innerHTML = html
-
-
