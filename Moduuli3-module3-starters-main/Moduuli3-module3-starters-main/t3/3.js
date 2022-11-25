@@ -1,10 +1,10 @@
 'use strict';
-const id = document.querySelector('#target');
+
 const names = ['John', 'Paul', 'Jones'];
+let list = document.getElementById('target')
 
-for (var i = 0; i < names.length; i++) {
-
-    console.log(names[i]);
+for (let i = 0; i < names.length; i++) {
+    let name = document.createElement('li')
+    name.innerText = names[i]
+    list.appendChild(name)
 }
-
-
