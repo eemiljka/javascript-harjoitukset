@@ -15,3 +15,15 @@ const students = [
     },
 ];
 
+for (let i = 0; i < students.length; i++) {
+
+
+    let newOption = document.createElement('option')
+    newOption.value = students[i]["id"]  + '>' + students[i]["name"];
+
+    let html = document.getElementById('target')
+    target.innerHTML = html
+
+    console.log(newOption.outerHTML);
+
+}
