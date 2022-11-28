@@ -93,3 +93,32 @@ const picArray = [
 ];
 
 // add your code here
+let newArticle = document.createElement('article')
+newArticle.classList = "card";
+
+let newHeading = document.createElement('h2')
+newArticle.appendChild(newHeading)
+
+let newTitle = document.createTextNode('Title')
+newHeading.appendChild(newTitle)
+
+let newFigure = document.createElement('figure')
+newArticle.appendChild(newFigure)
+
+let newImg = document.createElement('img')
+newImg.src = "img/pic1.jpg";
+newImg.alt = "Title from pic array"
+newFigure.appendChild(newImg)
+
+let newFigcaption = document.createElement('figcaption')
+newFigure.appendChild(newFigcaption)
+
+
+let newText = document.createTextNode('Description from pic array')
+let newP = document.createElement('p')
+newP.appendChild(newText)
+
+newArticle.appendChild(newP)
+
+
+console.log(newArticle.outerHTML)
