@@ -27,3 +27,5 @@ for (let i = 0; i < students.length; i++) {
     console.log(newOption.outerHTML);
 
 }
+let html = document.getElementById('target')
+target.innerHTML = html
