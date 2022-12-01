@@ -41,5 +41,6 @@ candidates.sort((a, b) => b.votes - a.votes);
 // print results
 for (const candidate of candidates) {
     // change hipsut
-    console.log(`${candidate.name}: ${candidate.votes} votes`);
+    target.innerHTML = (`${candidate[i].name}: ${candidate[i].votes} votes`);
 }
+
